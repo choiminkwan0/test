@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박물관 사이트</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+      #sec0 article {
+        display: flex;
+        justify-content: space-between;
+      }
+      #sec1 {
+        display: flex;
+        justify-content: space-around;
+      }
+      footer a {
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body> 
+    <header> <!--내비게이션 부트스트립 활용-->
+        <nav nav class="navbar bg-primary-subtle">  
+        <ul class="nav" style="color: white;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><b>Art Museum</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec0">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec1">예약 안내</a>
+            </li>
+            <li class="nav-item"> 
+              <a class="nav-link" href="#sec2">회원가입</a>
+            </li>
+          </ul>
+        </nav> 
+        </header> 
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <!--슬라이더 부트스트립 활용-->
+          <div class="carousel-inner">
+            <div class="carousel-item active" width="200">
+              <img src="img/museum.jpg" class="d-block w-100" alt="박물관">
+            </div>
+            <div class="carousel-item">
+              <img src="img/museum1.jpg" class="d-block w-100" alt="박물관">
+            </div>
+            <div class="carousel-item">
+              <img src="img/museum2.jpg" class="d-block w-100" alt="박물관">
+            </div>
+        </div>
+        <div class="text-bg-primary p-3">
+          <section id="sec0">
+            <h1 class="display-3">예술 박물관 소개</h1>
+            <h1 class="display-6">
+              오랜 역사의 숨결을 느낄 수 있는 문화터전 예술박물관에 오신 여러분을
+              환영합니다.
+            </h1> <br>
+            <p class="fw-bold">
+              예술 박물관은 국보,보물 등의 지정문화유산을 포함하여 160,000여 점의
+              소장품을 보존,관리하며 성설전시와 특별전시를 통해 다양한 주제로
+              관람객들이 문화를 향유할 수 있도록 노력하고 있습니다.
+            </p> <br>
+            <p class="fw-bold">
+              우리 박물관은 앞으로도 관람객 여러분은 쉼터, 배움터, 놀이터가 되고자
+              최선을 다하겠습니다.
+            </p> <br>
+            <p class="fw-bold">
+              박물관 정원은 언제나 마음의 여유를 주는 근사한 산책로입니다. 우뚝
+              솟은 기와집 앞으로 펼쳐진 너른 정원을 천천히 거닐며 고즈넉한 풍경과
+              함께 장운동 오층석탑, 고인돌 등 옥외전시품도 감상하고 즐기시기
+              바랍니다.
+            </p>
+            <article>
+            <img src="img/flower2.jpg" alt="꽃" />
+            <img src="img/flower3.jpg" alt="꽃" />
+          </article>
+          </section>
+        </div>
+          <!--flex를 활용하여 같은 간격으로 배치-->
+          <div class="p-3 mb-2 bg-primary-subtle text-black">
+            <h1 class="display-3">예약 안내</h1>
+            <h1 class="display-6">
+            예약은 전화 000-0000-0000 로 직접 통화 하시는게 가장 정확하고
+            빠릅니다. 인터넷 전화이므로 시외 전화 요금이 부과되지 않습니다.
+            </h1>
+          <section id="sec1">
+            <img src="img/museum3.jpg" alt="박물관" />
+            <img src="img/museum4.jpg" alt="박물관" />
+            <img src="img/museum5.jpg" alt="박물관" />
+          </section>
+        </div>
+        <div class="text-bg-primary p-3">
+          <h1 class="display-3">회원가입</h1>
+          <section id="sec2">
+            <form class="row g-3">
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">이름</label>
+                <input type="text" class="form-control" id="validationDefault01" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">아이디</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="12자내외" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="validationDefault01" placeholder="특수문자사용" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">이메일</label>
+                <input type="email" class="form-control" id="validationDefault02" placeholder="email@email.com" required>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">가입완료</button>
+              </div>
+              </form>
+            </section>
+          </div>
+        <footer>
+          <section id="sec3">
+            <address>
+              <p>제주특별자치도 남제주군 성산읍 수산리 000번지 예술 박물관</p>
+              <p>kwan##@naver.com</p>
+            </address>
+            <p>copyright.all right reserved</p>
+            <a href="#"><strong>맨 위로</strong></a>
+          </section>
+        </footer>
+      </div>
+</body>
+</html>
